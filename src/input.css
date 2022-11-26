@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600&family=Overlock:ital,wght@0,700;1,400&family=Source+Sans+Pro:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-sm font-display text-tertiary-400 transition-all hover:text-primary-400;
+  }
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.center {
+  @apply items-center justify-center;
+}
+
+.menu-stroke {
+  @apply h-[3px] w-full bg-gray-600 rounded-sm;
+}
+
+.item {
+  @apply w-1/4 h-auto rounded-lg;
+}
+
+.active-item {
+  @apply border-2 border-solid border-primary-400;
+}
+
+.product {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.qty-btn {
+  @apply w-6 h-6 flex items-center justify-center text-primary-400 cursor-pointer text-lg;
+}
+
+.cart-btn {
+  @apply w-3/4 bg-primary-400 p-2 text-xs font-accent font-bold uppercase text-white rounded-lg flex center gap-2 transition-all hover:bg-primary-500;
+}

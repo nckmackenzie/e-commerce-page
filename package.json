@@ -1,0 +1,14 @@
+{
+  "name": "e-commerce-product-page",
+  "version": "1.0.0",
+  "description": "Frontend mentor challenge for E-commerce product card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Mackenzie",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
