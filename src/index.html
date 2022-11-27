@@ -58,18 +58,45 @@
     </header>
     <main>
       <article
-        class="container pt-12 pb-6 md:pt-16 px-4 md:px-6 grid md:grid-cols-product-description md:grid-rows-auto gap-x-16 gap-y-9"
+        class="container pt-0 pb-6 md:pt-16 px-0 flex flex-col md:flex-row gap-x-16 gap-y-9"
       >
-        <div class="">
-          <img
-            src="../dist/img/shoes_1.png"
-            alt="Nike sneakers"
-            class="block w-full h-auto aspect-square rounded-2xl"
-          />
+        <!-- PRODUCT PHOTOS -->
+        <div class="w-full md:w-1/3 flex flex-col justify-center gap-4">
+          <div>
+            <img
+              src="../dist/img/shoes_1.png"
+              alt="Nike sneakers"
+              class="block w-full h-auto aspect-square md:rounded-2xl"
+            />
+          </div>
+          <!-- OTHER PRODUCT PHOTOS -->
+          <div class="hidden md:flex gap-4">
+            <img
+              src="../dist/img/shoes_1.png"
+              alt="Nike sneaker rear view"
+              class="item active-item"
+            />
+            <img
+              src="../dist/img/shoes_2.png"
+              alt="Nike sneaker rear view"
+              class="item"
+            />
+            <img
+              src="../dist/img/shoes_3.png"
+              alt="Nike sneaker rear view"
+              class="item"
+            />
+            <img
+              src="../dist/img/shoes_4.png"
+              alt="Nike sneaker rear view"
+              class="item"
+            />
+          </div>
         </div>
+
         <!-- PRODUCT INFORMATION -->
         <div
-          class="self-stretch product flex flex-col justify-center gap-4 w-1/2"
+          class="w-full md:w-2/3 md:max-w-sm px-6 flex flex-col justify-center gap-4"
         >
           <div class="title">
             <h4
@@ -102,9 +129,11 @@
 
             <span class="text-tertiary-400 text-xs"><s>$150</s></span>
           </div>
-          <div class="actions flex center gap-4 self-stretch">
+          <div
+            class="actions flex flex-col md:flex-row md:items-center md:justify-center gap-4 self-stretch"
+          >
             <div
-              class="w-1/4 px-2 py-1 bg-gray-200 rounded-lg flex center gap-4"
+              class="w-full md:w-1/4 px-2 py-1 bg-gray-200 rounded-lg flex items-center justify-between gap-4"
             >
               <button type="button" class="qty-btn">
                 <svg
@@ -160,29 +189,6 @@
               <span> Add to cart</span>
             </button>
           </div>
-        </div>
-        <!-- OTHER PRODUCT PHOTOS -->
-        <div class="hidden md:flex gap-4">
-          <img
-            src="../dist/img/shoes_1.png"
-            alt="Nike sneaker rear view"
-            class="item active-item"
-          />
-          <img
-            src="../dist/img/shoes_2.png"
-            alt="Nike sneaker rear view"
-            class="item"
-          />
-          <img
-            src="../dist/img/shoes_3.png"
-            alt="Nike sneaker rear view"
-            class="item"
-          />
-          <img
-            src="../dist/img/shoes_4.png"
-            alt="Nike sneaker rear view"
-            class="item"
-          />
         </div>
       </article>
     </main>
